@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIN Change - ATM</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+  <script src="script.js"></script> <!-- Include the JavaScript file -->
+</head>
+<body>
+<div class="form-container">
+  <h1>Change Your PIN</h1>
+  <form action="/submit-pin-change" method="POST"> <!-- Adjust action as needed -->
+    <label for="currentPin">Current PIN:</label>
+    <input type="password" id="currentPin" name="currentPin" placeholder="Enter current PIN" required>
+    <label for="newPin">New PIN:</label>
+    <input type="password" id="newPin" name="newPin" placeholder="Enter new PIN" required>
+    <label for="confirmNewPin">Confirm New PIN:</label>
+    <input type="password" id="confirmNewPin" name="confirmNewPin" placeholder="Confirm new PIN" required>
+    <button type="submit">Change PIN</button>
+  </form>
+</div>
+</body>
+</html>
